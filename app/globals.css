@@ -1,26 +1,152 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+
+
+  /* Brand */
+    --color-brand-pure: #ffffff;
+    --color-brand-dark: #000000;
+    --color-brand-main-01: #929292;
+    --color-brand-main-02: #E9E9E9;
+    --color-brand-main-03: #DFECC6;
+    --color-brand-main-04: #8E9C78;
+    --color-brand-main-05: #485C11;
+
+     
+  /* Text */
+    --color-text-head-01: #000000;
+    --color-text-caption: #485C11;
+    --color-text-body: #6F6F6F;
+    --color-text-link: #000000;
+    --color-text-btn: #ffffff;
+
+
+  /* Fonts */
+      --font-crimson:var(--font-crimson);
+      --font-dm-sans:var(--font-dm-sans);
+      --font-roboto-mono:var(--font-roboto-mono);
+      --font-rethink-sans:var(--font-rethink-sans);
+      --font-reddit-mono:var(--font-reddit-mono);
+
+     /* Text sizes */
+      --text-h1: 64px;
+      --text-h2: 48px;
+      --text-h3: 36px;
+      --text-h4: 24px;
+      --text-h5: 20px;
+
+      --text-14: 14px;
+      --text-15: 15px;
+      --text-16: 16px;
+      --text-18: 18px;
+      --text-20: 20px;
+
+      /* Line Height */
+        --leading-105: 105%;
+        --leading-110: 110%;
+        --leading-115: 115%;
+        --leading-125: 125%;
+        --leading-140: 140%;
+
+      /* Letter Spacing */
+        --tracking-75: 0.0075em;
+        --tracking-125: 0.0125em;
+        --tracking-200: 0.02em;
+
+      /* Border Radius */
+      --radius-xs: 3px;
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 10px;
+      --radius-full: 1000000px;
+
+      /* Spacing */
+      --spacing-1: 4px;
+      --spacing-2: 8px;
+      --spacing-3: 12px;
+      --spacing-4: 16px;
+      --spacing-5: 20px;
+      --spacing-6: 24px;
+
+
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer utilities{
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .font-head {
+    font-family: var(--font-crimson);
+  }
+
+  .font-body{
+    font-family: var(--font-dm-sans);
+  }
+
+  .font-roboto{
+    font-family: var(--font-roboto-mono)
+  }
+
+  .font-rethink{
+    font-family: var(--font-rethink-sans)
+  }
+
+  .font-reddit{
+    font-family: var(--font-reddit-mono)
+  }
+
+    /* shadows */
+
+  .shadow-card {
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  };
+
+  @media (min-width: 1024px) {
+  .shadow-card {
+    box-shadow: none;
   }
 }
 
+    /* Line Heights */
+  .leading-105 {
+    line-height: var(--leading-105);
+  }
+
+  .leading-110 {
+    line-height: var(--leading-110);
+  }
+
+  .leading-115 {
+    line-height: var(--leading-115);
+  }
+
+  .leading-125 {
+    line-height: var(--leading-125);
+  }
+
+  .leading-140 {
+    line-height: var(--leading-140);
+  }
+
+  /* Letter Spacing */
+  .tracking-75 {
+    letter-spacing: var(--tracking-75);
+  }
+
+  .tracking-125 {
+    letter-spacing: var(--tracking-125);
+  }
+
+  .tracking-200 {
+    letter-spacing: var(--tracking-200);
+  }
+
+
+}
+
+
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-brand-pure);
+    color: var(--color-brand-dark);
+    -webkit-font-smoothing: antialiased;
 }
