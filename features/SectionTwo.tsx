@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function SectionTwo() {
   return (
-    <section className="w-full px-8 pt-15 pb-20 lg:px-10 2xl:max-w-380 2xl:mx-auto">
+    <section className="w-full px-8 pt-10 pb-20 lg:px-10 2xl:max-w-380 2xl:mx-auto">
         <div className="flex flex-col gap-20 lg:flex-row">
             <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-10"> 
