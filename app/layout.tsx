@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Crimson_Text, DM_Sans, Roboto_Mono, Rethink_Sans,  Reddit_Mono, } from "next/font/google";
 import "./globals.css";
+import "lenis/dist/lenis.css";
 import { Footer, Navbar } from "@/components";
 
 const crimson = Crimson_Text({
